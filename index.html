@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체육시설 검색</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>서울시 공공 체육시설 검색</h1>
+    <div id="searchForm">
+        <label for="facility_type">체육시설 종류:</label>
+        <select id="facility_type">
+            <option value="">전체</option>
+            <option value="육상경기장">육상경기장</option>
+            <option value="축구장">축구장</option>
+            <option value="하키장">하키장</option>
+            <option value="야구장">야구장</option>
+            <option value="싸이클경기장">싸이클경기장</option>
+            <option value="테니스장">테니스장</option>
+            <option value="구기체육관">구기체육관</option>
+            <option value="투기체육관">투기체육관</option>
+            <option value="생활체육관">생활체육관</option>
+            <option value="게이트볼장">게이트볼장</option>
+            <option value="수영장">수영장</option>
+            <option value="롤러스케이트장">롤러스케이트장</option>
+            <option value="국궁장">국궁장</option>
+            <option value="골프연습장">골프연습장</option>
+            <option value="빙상장">빙상장</option>
+            <option value="기타 체육시설">기타 체육시설</option>
+        </select>
+        <br>
+        <label for="district">시군구:</label>
+        <input type="text" id="district" placeholder="예: 강남구">
+        <br>
+        <button onclick="search()">검색</button>
+    </div>
+
+    <h2>검색 결과:</h2>
+    <ul id="results"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
