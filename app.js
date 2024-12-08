@@ -2,7 +2,7 @@
 let facilityData = [];
 
 // JSON 데이터 로드
-fetch("모든_체육시설.json")
+fetch("all.json")
     .then(response => response.json())
     .then(data => {
         facilityData = data;
